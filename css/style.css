@@ -440,6 +440,61 @@ section[id] {
   opacity: 0.7;
 }
 
+/* ===== Participants ===== */
+
+.participants-list {
+  list-style: none;
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.participants-list li {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--su-orange);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.participants-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(15, 39, 68, 0.1);
+}
+
+.participant-name {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--deep-navy);
+}
+
+.participant-affil {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.participant-tag {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.08rem 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--su-orange);
+  background: rgba(247, 105, 0, 0.1);
+  border-radius: 999px;
+  vertical-align: middle;
+}
+
 /* ===== Responsive ===== */
 
 @media (max-width: 768px) {
